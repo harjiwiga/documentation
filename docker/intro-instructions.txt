@@ -1,0 +1,47 @@
+1.
+Hello world
+
+	1.1
+	The instruction were in general taken from here
+	https://docs.docker.com/installation/ubuntulinux/
+
+	1.2
+	Had to run ---  service docker start  (in order to start a deamon)
+	before ---  sudo docker run hello-world. May be should have used ---- sudo service docker start ???
+
+2.
+Using container's bash
+
+	2.1
+	Instructions are taken from https://docs.docker.com/userguide/dockerizing/
+
+	2.2
+	Instruction to run -
+	docker run -t -i ubuntu:14.04 /bin/bash
+
+	Then you can ls, pwd and other shell commands. To finish interaction, do --- exit.
+	
+3.
+Running deamon, accessing logs, checking running containers
+
+	3.1
+	Instructions are taken from https://docs.docker.com/userguide/dockerizing/
+
+	3.2
+	Run deamon --- docker run -d ubuntu:14.04 /bin/sh -c "while true; do echo hello world; sleep 1; done"
+
+	3.3
+	Check containers ---- docker ps. To see details of last container , use docker ps -l
+
+	3.4
+	Accessing logs based on name from 3.3 --- docker logs insane_babbage
+
+	3.4
+	Stop deamon --- docker stop insane_babbage
+	
+	
+4.
+Starting webapp, accessing it in browser, inspecting logs ---- https://docs.docker.com/userguide/usingdocker/	
+	
+5.
+Creating docker images !!!!!!!! ---- https://docs.docker.com/userguide/dockerimages/
